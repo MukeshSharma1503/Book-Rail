@@ -45,7 +45,7 @@
         {% if trains %}
         <div class="mb-3">
             <select autofocus required class="form-control selectpicker mx-auto w-25" id="train" name="train" placeholder="Destination" type="text" data-live-search="true">
-                <option selected disabled>SELECT DESTINATION STATION</option>
+                <option selected disabled>SELECT TRAIN</option>
                 {% for train in trains %}
                 <option value="{{ train['no'] }}" data-tokens="{{ train['no'] }}{{ train['name'] }}">{{ train['no'] }} : {{ train['name'] }}</option>
                 {% endfor %}
